@@ -13,15 +13,17 @@ const methodOverride = require('method-override');
 const productRoutes = require('./routes/productRoutes')
 const reviewsRoutes = require('./routes/reviewRoutes')
 const cartRoutes = require('./routes/cartRoutes')
-
-
-mongoose.connect('mongodb://127.0.0.1:27017/Testing')
-.then(()=>{
-    console.log('DB connected.')
-})
-.catch(()=>{
-    console.log('Error connecting');
-})
+const dotenv = require('dotenv');
+dotenv.config();
+    
+mongoose
+  .connect(process.env.mongodb_url)
+  .then(() => {
+    console.log("DB connected.");
+  })
+  .catch(() => {
+    console.log("Error connecting");
+  });
 
 const sessionset = {
     secret: 'keyboard cat',
