@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+.main_body{
+    background-image: url("https://img.freepik.com/free-photo/arrangement-black-friday-shopping-carts-with-copy-space_23-2148667047.jpg?w=996&t=st=1703518474~exp=1703519074~hmac=89ce551d08429f680e10334994a65f8faf387845f107834e2de455e75c2817d3");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.UserLogin{
+   
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box{
+    width: 400px;
+    height: 400px;
+    background-color: #EEF0E5;
+}
+
+.sing_page{
+    background-color:#EEF0E5 ;
+}

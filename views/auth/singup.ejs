@@ -1,0 +1,48 @@
+<%- include('../partials/header.ejs') %>
+
+<div class="col-lg-6 mt-3 mx-auto" style="width: 100%;">
+    <%- include('../partials/flash.ejs') %>
+</div>
+
+<div class="sing_page mx-auto border border-black p-2 px-3 rounded " style="width: 400px;">
+    <form action="/singup" method="POST">
+        <h2 class="text-center bg-primary p-1">SignUp</h2>
+        <div class="mb-3">
+            <label class="form-label" for="email">Email:</label>
+            <input class="form-control" type="email" name="email" id="email" required>
+         </div>
+         <div class="mb-3">
+            <label class="form-label" for="username">Username:</label>
+            <input class="form-control" type="text" name="username" id="username" required>
+         </div>
+         <div class="mb-3">
+            <label class="form-label" for="img">ProfileImage:</label>
+            <input class="form-control" type="text" name="img" id="img" required>
+         </div>
+         <div class="mb-3">
+            <p class="mb-2"><b>Want to register as?</b></p>
+            <div classs ="mx-2">
+                <label class="form-label" for="buyer">Buyer:</label>
+                <input type="radio" class="form-check-input" value="buyer" name="role" id="buyer">
+            </div>
+            <div classs ="mx-2">
+                <label class="form-label" for="seller">Seller:</label>
+                <input type="radio" class="form-check-input" value="seller" name="role" id="seller">
+            </div>
+         </div>
+         <div class="mb-3">
+             <label class="form-label" for="password">Password:</label>
+             <input class="form-control" type="text" name="password" id="password" required>
+         </div>
+         <button class="btn btn-success mt-3" type="submit">Submit</button>
+         <p class="ft-light mt-2">Already have an account,<a href="/login">Login</a></p>
+     </form>
+</div>
+
+
+<%- include('../partials/footer.ejs') %>
+
+
+
+
+

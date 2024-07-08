@@ -1,0 +1,33 @@
+<%- include('../partials/header.ejs') %>
+
+
+<div class="row mt-5">
+
+    <% if(user.cart.length>0){ %>
+        <% for(let item of user.cart){ %>
+
+            <div class="col-lg-4 product-card">
+                <div class="card text-center shadow mt-3 mx-auto" style="width: 18rem;">
+                    <img src="<%=item.img%>" class="card-img-top img" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">
+                            <%= item.name %>
+                        </h3>
+                        <h5 class="card-title"> Rs: <%= item.price %>
+                        </h5>
+                        <p class="card-text">
+                            <%= item.desc.substring(0,20) %>...
+                        </p>
+                        <a href="/products" class="btn btn-primary">Back</a>
+                        <form class="d-inline-block" action="/user/<%= item._id %>?_method=DELETE" method="POST">
+                           <button type="submit" class="btn btn-danger">Delete</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    
+            <% } %>
+    <% }else { %>
+          <h2 class="mx-auto mt-3 text-danger text-center">You don't add single product in your cart</h2>
+    <% }%>
+</div>

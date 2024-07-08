@@ -1,0 +1,91 @@
+<%- include('../partials/header') %>
+
+
+<div class="row margin-form">
+    <div class="col-6 bg-info mx-auto mt-5 mb-5">
+        <form action="/products" method="POST"class="needs-validation" style="margin: 30px 10px;" novalidate>
+            <div class="mb-3">
+                <label for="naam" class="form-label">Name: </label>
+                <input type="text" class="form-control" name="name" id="naam" placeholder="Name of Product" required>
+                <!-- look good  -->
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+
+                <!-- not good -->
+                <div class="invalid-feedback">
+                    Please choose a username.
+                </div>
+
+            </div>
+            <div class="mb-3">
+                <label for="imge" class="form-label">Image Url: </label>
+                <input type="text" class="form-control" name="img" id="imge" placeholder="Image URL of Product" required>
+                
+                <!-- look good  -->
+                <div class="valid-feedback">
+                Looks good!
+                </div>
+
+                <!-- not good -->
+                <div class="invalid-feedback">
+                    Please choose a username.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="paisa" class="form-label">Price: </label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Rs. </span>
+                    <input class="form-control" type="number" name="price" id="paisa"
+                        placeholder="Price of Product" required>
+                </div>
+                <!-- look good  -->
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+
+                <!-- not good -->
+                <div class="invalid-feedback">
+                    Please choose a username.
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="des" class="form-label">Description: </label>
+                <textarea class="form-control" name="desc" id="des" rows="5"
+                    placeholder="Description of Product" required></textarea>
+                <!-- look good  -->
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+
+                <!-- not good -->
+                <div class="invalid-feedback">
+                    Please choose a username.
+                </div>
+            </div>
+            <button type="submit" class="btn btn-sm btn-success">Add</button>
+        </form>
+    </div>
+</div>
+<script>
+    (() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+</script>
+<%- include('../partials/footer') %>

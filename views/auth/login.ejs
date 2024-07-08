@@ -1,0 +1,31 @@
+<%- include('../partials/header.ejs') %>
+
+
+<div class="col-lg-6 mt-3" style="width: 100%;">
+    <%- include('../partials/flash.ejs') %>
+</div>
+
+<div class="UserLogin">
+    <div class="box mt-3 mx-auto border border-black p-2 rounded" >
+        <form action="/login" method="POST">
+            <h2 class="text-center bg-primary p-1">Login</h2>
+            <div>
+                <label for="username"  class="form-label">Username</label>
+                <input type="text" class="form-control" name="username" id="username" required>
+            </div>
+            <div>
+                <label for="password" class="form-label" >password</label>
+                <input type="password" class="form-control" name="password" id="password" required>
+            </div>
+            <button type="submit" class="btn btn-success mt-3 mb-2">submit</button>
+            <div>
+                <button class="btn d-block btn-info mb-2" style="width: 100%;"><i class="fa-brands fa-google"></i>google</button>
+                <button class="btn d-block btn-info" style="width: 100%;"><i class="fa-brands fa-facebook"></i>Facebook</button>
+            </div>
+            <p class="ft-light mt-2">Dont have an account,<a href="/singup">signup</a></p>
+        </form>
+    </div>
+</div>
+
+
+<%- include('../partials/footer.ejs') %>
