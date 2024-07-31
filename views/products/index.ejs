@@ -4,23 +4,23 @@
     <%- include('../partials/flash.ejs') %>
 </div>
 
-<div class="row mt-5 ">
+<div class="row mt-5 " style="background-color: aliceblue;">
 
     <% for(let item of products){ %>
 
-        <div class="col-lg-4 product-card mb-3">
-            <div class="card text-center shadow mt-3 mx-auto" style="width: 18rem;">
-                <img src="<%=item.img%>" class="card-img-top img" alt="...">
+        <div class="col-lg-3 product-card mb-3">
+            <div class="card text-center shadow mt-3 mx-auto" style="width: 14rem;">
+                <img src="<%=item.img%>" class="card-img-top img" style="width: 14rem; height: 200px;" alt="...">
                 <div class="card-body">
-                    <h3 class="card-title">
-                        <%= item.name %>
+                    <h3 class="cardtitle">
+                        <%= item.name.substring(0,10) %>...
                     </h3>
-                    <h5 class="card-title"> Rs: <%= item.price %>
+                    <h5 class="cardprice"> Rs: <%= item.price %>
                     </h5>
-                    <p class="card-text">
+                    <p class="cardtext">
                         <%= item.desc.substring(0,20) %>...
                     </p>
-                    <a href="/products/<%= item._id%>" class="btn btn-primary">View Product</a>
+                    <a href="/products/<%= item._id%>" class="btn btn-light">View Product</a>
                 </div>
             </div>
         </div>

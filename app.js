@@ -72,6 +72,10 @@ app.use(reviewsRoutes);
 app.use(UserRoutes);
 app.use(cartRoutes);
 
+app.get('/', (req, res) => {
+  res.render('dashboard/dashboard')
+})
+
 
 app.listen(8000,()=>{
     console.log("listening on " +8000);

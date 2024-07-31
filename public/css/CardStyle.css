@@ -1,0 +1,14 @@
+.cardtitle{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.cardprice{
+    
+    font-size: 20px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.cardtext{
+    color: rgb(25, 187, 133);
+}

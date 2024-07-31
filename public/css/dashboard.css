@@ -1,0 +1,273 @@
+.dashboard{
+    width: 90%;
+    background-color:aliceblue ;
+    margin: 20px auto;
+    height: 100%;
+    
+}
+
+.dashboard-title{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(248, 246, 244);
+    padding: 10px;
+   flex-wrap: wrap;
+   gap: 20px;
+
+}
+.image1 img{
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+    /* bottom: 0px; */
+}
+
+.image2 img {
+width: 150px;
+    height: 150px;
+    margin-right: 10px;
+}
+
+.dashboard-title .title{
+    width: 600px;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.dashboard-title .title h1{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.dashboard-title .title p{
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+
+.main-barand{
+    background-color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 0px;
+}
+
+.main-barand h1{
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.product-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.product-card .card-level{
+    text-align: center;
+    margin: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.card-level .pro-img img{
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card-level .pro-img img:hover{
+    transform: scale(1.03);
+    transition: 0.5s;
+
+}
+
+.card-level h3{
+    font-size: 18px;
+    /* padding:0px 5px ; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.card-level p{
+    font-weight: bold;
+}
+
+.video-box{
+    width: 70%;
+    margin: 30px auto;
+}
+
+.advatisement video{
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    line-height: 1;
+    border: none;
+
+}
+
+.electronics-product{
+    /* background-color: #bbb; */
+    padding: 20px;
+
+}
+
+
+.electronpage h2{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.products{
+    background-color: #fff;
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+}
+
+.productcard{
+    width: 400px;
+    margin: 20px;
+
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.productcard img{
+  width: 200px;
+  height: 200px;
+  padding: 5px;
+}
+
+.productcard h3{
+    font-size: 18px;
+    font-weight: bold;
+    
+    margin: 5px;
+}
+
+.productcard img:hover {
+    transform: scale(1.03);
+    transition: 0.5s;
+
+}
+
+.type-product{
+    display: flex;
+    gap: 5px;
+    justify-content: space-evenly;
+}
+
+.porducttype{
+   
+    width: 200px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.porducttype img{
+    padding: 5px;
+    width: 150px;
+    height: 150px;
+}
+
+.porducttype img:hover{
+    transform: scale(1.03);
+    transition: 0.5s;
+}
+
+.sport-fitness{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    background-color: #fff;
+}
+
+.brand {
+    font-size: 20px;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.home-decor{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+        align-items: center;
+    gap: 3px;
+    background-color: #fff;
+}
+
+
+
+.health-wellness{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+        align-items: center;
+    gap: 3px;
+    background-color: #fff;
+}
+
+
+.porducttype h2{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.porducttype p{
+    color: rgb(153, 241, 153);
+}
+
+.footer{
+    margin: 40px 0px;
+    background-color:rgb(68, 78, 87);
+    padding: 20px;
+}
+.footer-box{
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.infor-section h3{
+    color: #989393;
+    font-size: 18px;
+}
+
+.infor-section ul li{
+    list-style: none;
+    line-height: 2rem;
+}
+
+.infor-section ul li a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+.infor-section ul li:hover{
+    transform: scale(1.03);
+        transition: 0.5;
+    
+}
+.infor-section ul li a:hover{
+    color: rgb(153, 241, 153);
+    
+}
